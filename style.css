@@ -1,0 +1,148 @@
+/* 
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Outfit', sans-serif;
+	font-size: 62.5%;
+	background-color: hsl(217, 54%, 11%);
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: #fff;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: hsl(216, 50%, 16%);
+	padding: 2.5em;
+	border-radius: 3%;
+	width: 100%;
+	max-width: 325px;
+	margin: 5em 2em;
+   
+}
+.img-box {
+	position: relative;
+    
+    
+}
+.img {
+	width: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	border-radius: 3%;
+	height: auto;
+    
+    
+    
+}
+
+.img-shadow {
+	position: absolute;
+	top: 0;
+	background-color: hsla(178, 100%, 50%, 0.5);
+	width: 100%;
+	height: 99%;
+    border-radius: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .3s;
+    
+}
+.img-box:hover .img-shadow {
+    opacity: 1;
+}
+.content {
+	margin: 1em 0;
+	color: hsl(0, 0%, 100%);
+}
+.headline {
+	font-size: 1.4rem;
+	margin: 0.5em 0;
+    transition: color .3s;
+}
+.headline:hover {
+    color:hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
+.text {
+	font-size: 1rem;
+    color: hsl(215, 51%, 70%);
+	font-weight: 300;
+}
+.content-info {
+	display: flex;
+	justify-content: space-between;
+	margin: 2em 0;
+}
+.info {
+	display: flex;
+	align-items: start;
+}
+.info-text {
+	margin-left: 0.5em;
+	font-size: 0.9rem;
+}
+.icon-clock {
+	margin-top: 0.1em;
+}
+.info-one {
+	color: hsl(178, 100%, 50%);
+}
+.info-two {
+	color: hsl(215, 51%, 70%);
+}
+
+.underline {
+	width: 100%;
+	height: 1px;
+	background-color: hsl(215, 32%, 27%);
+	margin-bottom: 2em;
+}
+.user-box {
+	display: flex;
+	align-items: center;
+}
+.avatar {
+	width: 40px;
+	border-radius: 50%;
+	border: 1px solid hsl(0, 0%, 100%);
+}
+.user-text {
+	font-size: 1rem;
+	margin-left: 1em;
+    color:hsl(215, 51%, 70%) ;
+}
+.user-name {
+    color: hsl(0, 0%, 100%);
+    transition: color .3s;
+}
+.user-name:hover {
+color :hsl(178, 100%, 50%);
+cursor: pointer;
+}
